@@ -1,0 +1,129 @@
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+    text-decoration:none;
+}
+ul,li{
+    list-style:none;
+}
+a{
+    color:#c0c0c0;
+}
+html{
+    font-size:15px;
+}
+body{
+    direction:rtl;
+    background-color:#151515;
+    font-family:iran-sanse;
+    color:#fff;
+}
+.wrapper-full{
+    width:100%;
+    padding:0 30px;
+}
+.wrapper{
+    width:1155px;
+    margin:0 auto;
+    padding:0 10px;
+}
+.en{
+    font-family: tahoma;
+}
+@font-face {
+    font-family:iran-sanse;
+    src: url(../font/IRANSans-web.woff2);
+    src: url(../font/IRANSans-Medium-web.woff2);
+}
+.flex{
+    display:flex;
+}
+.space-between{
+    justify-content:space-between;
+}
+.item-center{
+    align-items: center;
+}
+.icon{
+    width:15px;
+    height:auto;
+}
+.icon-big{
+    width: 20px;
+    height:auto;
+}
+.icon-Xbig{
+    width: 80px;
+    height: auto;
+}
+.radius{
+    border-radius:15px;
+}
+.mini-radius{
+    border-radius:3px;
+}
+.mini-gap{
+    gap:0.5em;
+}
+.gap-1{
+    gap:2.2em;
+}
+.gap-3{
+    gap:1.2em;
+}
+.gap-4{
+    gap:1em;
+}
+.gap-5{
+    gap: 1.4em;
+}
+.cover{
+    width:100%;
+    height: 100%;
+    object-fit:cover
+}
+.none{
+    display:none;
+}
+.f-1{
+    font-size:0.65rem;
+    font-weight: 400;
+}
+.f-2{
+    font-size: 0.73rem;
+    font-weight: 400;
+}
+.f-3{
+    font-size: 0.8rem;
+}
+.p-1{
+    padding: 0.6em;
+}
+.p-2{
+    padding: 1.4em 0;
+}
+.absolute{
+    position: absolute;
+}
+.position{
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.position-50{
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+.section-space{
+    padding-top: 6.2em;
+}
+.mini-section-space{
+    padding-top: 3.1em;
+}
+.col-2{
+    flex-basis: 50%;
+    gap:0.5em;
+
+}
