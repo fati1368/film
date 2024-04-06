@@ -125,7 +125,7 @@
   font-size: 0.84rem;
   color: #e7e5e5;
 }
-.hero-section .top-hero .online .title{
+.hero-section .top-hero .online .title {
   text-align: center;
   padding-bottom: 1.6em;
 }
@@ -145,7 +145,6 @@
 }
 .hero-section .hero-image .hero-wrapper .bottom-hero .save-right {
   position: relative;
-  transition: all 2s;
 }
 .hero-section .hero-image .hero-wrapper .bottom-hero .save-right .save {
   background-color: rgba(134, 131, 131, 0.5);
@@ -172,56 +171,68 @@
   padding: 0.85em 7em;
   color: #fff;
 }
-.about .text{
-  padding-right:1.5em;
+.about .img {
+  position: relative;
 }
-.about .text p{
+.about .img .overly {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.about .img .icon-overly {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 40px;
+  padding: 15px;
+}
+.about .text {
+  padding-right: 1.5em;
+}
+.about .text p {
   color: #afa7a7;
   font-weight: 300;
   line-height: 2;
 }
-.about .text p a:hover{
+.about .text p a:hover {
   color: #fdc13c;
 }
-.about .text .description-story{
-  padding-bottom:4em;
-
+.about .text .description-story {
+  padding-bottom: 4em;
 }
-.about .text h3{
-  padding-bottom:0.8em;
+.about .text h3 {
+  padding-bottom: 0.8em;
   font-weight: 700;
-  font-size:0.95rem
+  font-size: 0.95rem;
 }
-.special .header-special {
+.recomended .header-special {
   padding-top: 2em;
 }
-.special .header-special .more a {
+.recomended .header-special .more a {
   flex-direction: row-reverse;
   color: #fdc13c;
   font-size: 0.8rem;
 }
-.special .header-special .more a .icon-special {
+.recomended .header-special .more a .icon-special {
   width: 5px;
   height: auto;
 }
-.special .items-list {
+.recomended .items-list {
   padding: 1em 0 3em 0;
 }
-.special .items-list ul {
+.recomended .items-list ul {
   flex-wrap: wrap;
   justify-content: center;
 }
-.special .items-list ul li {
+.recomended .items-list ul li {
   width: 223px;
   height: 293px;
   position: relative;
   padding: 0.3em;
 }
-.special .items-list ul li a {
+.recomended .items-list ul li a {
   display: block;
   position: relative;
 }
-.special .items-list ul li a span {
+.recomended .items-list ul li a span {
   position: absolute;
   top: 10px;
   left: 10px;
@@ -233,14 +244,19 @@
   display: inline-block;
   color: #fff;
 }
-.special .items-list ul li a img.copy-right {
+.recomended .items-list ul li a img.copy-right {
   position: absolute;
   bottom: 10px;
   left: 50%;
   z-index: 1;
   transform: translateX(-50%);
 }
-.special .items-list ul li a .overlay {
+.recomended .items-list ul li .overly {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+.recomended .items-list ul li a .overlay {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -253,7 +269,7 @@
   visibility: hidden;
   border-radius: 5px;
 }
-.special .items-list ul li a .hover-box {
+.recomended .items-list ul li a .hover-box {
   flex-direction: column;
   gap: 0.3em;
   position: absolute;
@@ -265,26 +281,145 @@
   font-size: 0.65rem;
   z-index: 3;
 }
-.special .items-list ul li a .hover-box p {
+.recomended .items-list ul li a .hover-box p {
   color: #fff;
   padding: 0.6em;
 }
-.special .items-list ul li a .hover-box .imbd {
+.recomended .items-list ul li a .hover-box .imbd {
   gap: 1em;
   background-color: rgba(77, 77, 77, 0.8);
   border-radius: 10px;
   width: fit-content;
   padding: 0.1em 0.2em;
 }
-.special .items-list ul li a .hover-box .imbd p {
+.recomended .items-list ul li a .hover-box .imbd p {
   padding: 0.1em 0;
 }
-.special .items-list ul li:hover .hover-box,
-.special .items-list ul li:hover .overlay {
+.recomended .items-list ul li:hover .hover-box,
+.recomended .items-list ul li:hover .overlay {
   opacity: 1;
   visibility: visible;
 }
-.special .items-list ul li a .hover-box .imbd .icon-special {
+.recomended .items-list ul li a .hover-box .imbd .icon-special {
   width: 18px;
+  height: auto;
+}
+.recomended .online .items-list ul li a span {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+  background-color: #aa1f1f;
+  border-radius: 10px;
+  font-size: 0.6rem;
+  padding: 0.4em;
+  display: inline-block;
+  color: #fff;
+}
+.actors .title {
+  padding-bottom: 1em;
+  font-weight: 700;
+  margin-top: 3em;
+}
+.actors ul {
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: start;
+  gap: 0.8em 0.2em;
+  padding-right: 1em;
+}
+.actors li a {
+  display: flex;
+  gap: 0.1em;
+  background-color: rgba(134, 131, 131, 0.2);
+  padding: 0.2em 0.5em;
+  color: #fff;
+  border-radius: 50px;
+}
+.actors li a:hover {
+  background-color: rgba(134, 131, 131, 0.5);
+}
+.actors li div img {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin-left: 3px;
+}
+.actors li p {
+  font-size: 0.8rem;
+  font-weight: 300;
+  align-content: center;
+}
+.other .title {
+  padding-bottom: 1em;
+  font-weight: 700;
+  margin-top: 6em;
+}
+.other ul {
+  gap: 2em;
+  padding-right: 1em;
+}
+.other ul li p {
+  font-size: 0.8rem;
+  color: #6d6767;
+  font-weight: 300;
+  padding-bottom: 3px;
+}
+.other ul li h1 {
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+.other ul li h1:hover {
+  color: #d19e31;
+}
+.comment {
+  margin-bottom: 3em;
+}
+.comment .top-comment .title {
+  font-weight: 700;
+  margin-top: 6em;
+  padding-bottom: 1em;
+}
+.comment .top-comment .input {
+  gap: 1em;
+  align-items: center;
+  position: relative;
+}
+.comment .top-comment .input input {
+  flex-basis: 95%;
+  height: 40px;
+  font-size: 0.8rem;
+  color: #191919;
+  border: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  padding: 10px;
+}
+.comment .top-comment .input input::placeholder {
+  font-family: iran-sanse;
+  color: #cccccc;
+}
+.comment .top-comment .input input:focus-visible {
+  border: transparent 0;
+  outline: none;
+}
+.comment .top-comment .input input:focus {
+  background-color: #fff;
+  border: transparent 0;
+}
+.comment .top-comment .input i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 12px;
+  background-color: #313131;
+  padding: 13px 20px;
+  cursor: pointer;
+}
+.comment .account .account-img {
+  border-radius: 20px;
+  background-color: #bd968c;
+  padding: 6px;
+  width: 30px;
   height: auto;
 }
